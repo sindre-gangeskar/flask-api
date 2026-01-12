@@ -16,8 +16,8 @@ parameters:
         - username
         - password
       example: 
-        username: demo_user
-        password: demo_password
+        username: admin
+        password: admin
 responses:
   200:
     description: Successful login
