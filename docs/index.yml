@@ -1,0 +1,14 @@
+description: Index endpoint for the project
+tags:
+  - Index
+responses:
+  200:
+    description: Success
+    schema:
+      properties:
+        message: 
+          type: string
+    examples: 
+      application/json:
+        message: Welcome to Sindre Gangeskar's simple Flask API - documentation can be reached at /apidocs
+    

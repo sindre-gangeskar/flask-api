@@ -5,7 +5,7 @@ from lib.auth import JWT_SECRET
 def verify_jwt():
   auth_header = request.headers.get("Authorization")
   if not auth_header or not auth_header.startswith("Bearer "):
-    return jsonify(message="Bearer token required"), 401
+    return jsonify(message="Login required"), 401
   
   token = auth_header.split(" ", 1)[1].strip()
   try:

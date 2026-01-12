@@ -1,0 +1,38 @@
+description: Calculate basic division by providing two params in the path. **User** must be authenticated with a Bearer token to gain access.
+tags:
+  - Divide
+parameters:
+  - name: Authorization
+    in: header
+    required: true
+    type: string
+    description: Bearer access token, e.g. Bearer <token>
+  - name: param1
+    in: path
+    required: true
+    type: integer
+    description: First number for division
+  - name: param2
+    in: path
+    required: true
+    type: integer
+    description: Second number for division
+responses:
+  200:
+    description: Success
+    schema: 
+      type: object
+      parameters:
+        message: string
+    examples: 
+      application/json:
+        message: "6 / 2 = 3"
+  401: 
+    description: Unauthorized - A bearer token is required in authorization header
+    schema: 
+      type: object
+      parameters: 
+        message: string
+    examples: 
+      application/json:
+        message: Login required | Invalid or malformed token, please log in again
