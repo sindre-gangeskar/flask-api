@@ -12,9 +12,6 @@ The project reads from a super basic *users.json* file and if it finds a match; 
 ## Documentation
 I was able to learn how to generate Swagger-based documentation with the **flasgger** package, The documentations were modeled with yml files, and the actual documentation can be reached at **/apidocs**. 
 
-## API is live
-The API is live and can be reached at https://api.flask.sindregangeskar.dev
-
 ## Dependencies used
 - **Flask**
 - **PyJWT**
