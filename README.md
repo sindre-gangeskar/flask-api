@@ -1,4 +1,4 @@
-# Simple Flask API
+# Simple Flask API Practice
 This is a simple Flask API that provides api paths for authentication, and incredibly basic mathematical solutions.
 
 I've learned the basics of middleware for Flask, and I've implemented an auth middleware that protects the mathematical routes, which requires a Bearer jwt token in the Authorization header to gain access.
